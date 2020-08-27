@@ -13,7 +13,9 @@ test('calculate percentage [1.5, 3, 6, 1.5]', () => {
 });
 
 test('calculate random array', () => {
-    const arr = getData(1000000, 10);
+    const arr = getData(5500000, 10);
+    console.time('percentage execute');
     const solution = percentage(arr);
-    expect(solution.length).toBe(1000000);
+    console.timeEnd('percentage execute');
+    expect(solution.length).toBe(5500000);
 })
