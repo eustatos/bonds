@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {String[]} arr массив из строковых представлений рациональных чисел
+ * @returns {String[]} solutiton массив из строковых представлений процентов от 
+ * общей суммы
+ */
 function percentage(arr) {
   const summ = arr.reduce((acc, item) => {
     return acc + Number.parseFloat(item);

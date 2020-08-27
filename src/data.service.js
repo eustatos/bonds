@@ -1,3 +1,10 @@
+/**
+ * 
+ * @param {number} length 
+ * @param {number} range 
+ * @returns {String[]} массив строковых представлений случайных чисел
+ * в диапазоне `range` длиной `length`
+ */
 function getData(length, range) {
   const arr = [];
   for (let i = 0; i < length; i++) {
